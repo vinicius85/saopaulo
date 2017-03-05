@@ -1,2 +1,3 @@
 docker-elk/elasticsearch/data/*
+docker-elk/elasticsearch/config/*
 .gradle/*
