@@ -1,3 +1,4 @@
 docker-elk/elasticsearch/data/*
 docker-elk/elasticsearch/config/*
 docker-elk/.gradle/*
+carteira.txt
