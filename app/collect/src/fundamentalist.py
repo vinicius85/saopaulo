@@ -1,39 +1,43 @@
 from fundamentus import fundamentus
+from elasticsearch import Elasticsearch
+from datetime import datetime
+
+def percentageToFloat(value):
+  return float(value.replace('%','').replace(',','.'))
+
+def load_input(filename):
+  companies = [line.strip() for line in open(filename, 'r')]
+  return companies
+
 
 if __name__ == '__main__':
+
+    es = Elasticsearch()
+    es.indices.create(index='fundamental', ignore=400)
+
+    mainStocks = load_input('/home/vinicius/workspace/saopaulo/app/collect/res/empresas.txt')
+
     lista = fundamentus.get_data()
     
-    print('{0:<7} {1:<7} {2:<10} {3:<7} {4:<10} {5:<7} {6:<10} {7:<10} {8:<10} {9:<11} {10:<11} {11:<7} {12:<11} {13:<14} {14:<7}'.format('Papel',
-                                                                                                                                          'Cotação',
-                                                                                                                                          'P/L',
-                                                                                                                                          'P/VP',
-                                                                                                                                          'PSR',
-                                                                                                                                          'DY',
-                                                                                                                                          'P/EBIT',
-                                                                                                                                          'EV/EBIT',
-                                                                                                                                          'EBITDA',
-                                                                                                                                          'Mrg.Liq.',
-                                                                                                                                          'Liq.Corr.',
-                                                                                                                                          'ROIC',
-                                                                                                                                          'ROE',
-                                                                                                                                          'Div.Brut/Pat.',
-                                                                                                                                          'Cresc.5a'))
-    
-    print('-'*154)
     for k, v in lista.items():
-        print('{0:<7} {1:<7} {2:<10} {3:<7} {4:<10} {5:<7} {6:<10} {7:<10} {8:<10} {9:<11} {10:<11} {11:<7} {12:<11} {13:<14} {14:<7}'.format(k,
-                                                                                                                                              v['cotacao'],
-                                                                                                                                              v['P/L'],
-                                                                                                                                              v['P/VP'],
-                                                                                                                                              v['PSR'],
-                                                                                                                                              v['DY'],
-                                                                                                                                              v['P/EBIT'],
-                                                                                                                                              v['EV/EBIT'],
-                                                                                                                                              v['EBITDA'],
-                                                                                                                                              v['Mrg.Liq.'],
-                                                                                                                                              v['Liq.Corr.'],
-                                                                                                                                              v['ROIC'],
-                                                                                                                                              v['ROE'],
-                                                                                                                                              v['Div.Brut/Pat.'],
-                                                                                                                                              v['Cresc.5a']))
+        if(k in mainStocks):
+          es.index(index="fundamental", id=k,  doc_type="stock", \
+            body={
+              "papel" : k, 
+              "cotacao" : percentageToFloat(v['cotacao']), 
+              "pl" : percentageToFloat(v['P/L']), 
+              "p_vpa" : percentageToFloat(v['P/VP']), 
+              "psr" : percentageToFloat(v['PSR']), 
+              "div_yield": percentageToFloat(v['DY']), 
+              'p_ebit' : percentageToFloat(v['P/EBIT']), 
+              'ev_ebit' : percentageToFloat(v['EV/EBIT']), 
+              'ebitda' : percentageToFloat(v['EBITDA']), 
+              'mrg_liq' : percentageToFloat(v['Mrg.Liq.']), 
+              'liq_corr' :  percentageToFloat(v['Liq.Corr.']), 
+              'roic' : percentageToFloat(v['ROIC']), 
+              'roe' : percentageToFloat(v['ROE']), 
+              'div_brut_patr' :  percentageToFloat(v['Div.Brut/Pat.']),
+              "indexUpdate": datetime.now(),
+              'cres_5a' : percentageToFloat(v['Cresc.5a'])}\
+          )
 
