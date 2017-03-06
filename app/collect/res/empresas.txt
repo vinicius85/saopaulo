@@ -1,60 +1,76 @@
-PETR4
-VALE5
-BRSR6
-BBAS3
-ITUB4
-BBDC4
-CMIG4
-RUMO3
-ETPL4
-ABEV3
-ALUP11
-ALPA4
-BVMF3
-CTIP3
-BRML3
-BRKM5
-PTBL3
-BRFS3
-BTG11
-CIEL3
-CCRO3
-ECOR3
-CSAN3
-CVCB3
-CSNA3
-CYRE4
-ELET6
-EZTC3
-EQTL3
-FIBR3
-PARC3
-GFSA3
-AGRO3
-GGBR3
-GOLL3
-GRND4
-GUAR4
-HYPE3
-ITSA4
-KLBN11
-KROT3
-HGTX3
-MGLU3
-MARI3
-MRFG3
-MILS3
-MRVE3
-MPLU3
-NATU3
-RADL3
-SUZB5
-SMTO3
-TCSA3
-VIVT4
-UGPA4
-VVAR11
-WEGE3
-IBOV11
-SMLE3
-USIM5
+empresa;nome;setor;subsetor;segmento
+PETR4;Petrobras;Petróleo, Gás e Biocombustíveis;Petróleo, Gás e Biocombustíveis;Exploração, Refino e Distribuição
+VALE5;Vale;Materiais Básicos;Mineração;Minerais Metálicos
+BRSR6;Banrisul;Financeiro e Outros;Intermediários Financeiros;Bancos
+SANB11;Santander;Financeiro e Outros;Intermediários Financeiros;Bancos
+BBAS3;Banco do Brasil;Financeiro e Outros;Intermediários Financeiros;Bancos
+ITUB4;Itau;Financeiro e Outros;Intermediários Financeiros;Bancos
+BBDC4;Bradesco;Financeiro e Outros;Intermediários Financeiros;Bancos
+CMIG4;Cemig;Utilidade Pública;Energia Elétrica;Energia Elétrica
+RUMO3;Rumo;Bens Industriais;Transporte;Transporte Ferroviário
+ELPL4;Eletropaulo;Utilidade Pública;Energia Elétrica;Energia Elétrica
+ABEV3;Ambev;Consumo não cíclico;Bebidas;Cervejas e Refrigerantes
+ALUP11;Alupar;Utilidade Pública;Energia Elétrica;Energia Elétrica
+TIET11;AES Tiete;Utilidade Pública;Energia Elétrica;Energia Elétrica
+TAEE11;Taesa;Utilidade Pública;Energia Elétrica;Energia Elétrica
+CGAS5;Comgas;Utilidade Pública;Gás;Gás
+ALPA4;Alpargatas;Consumo Cíclico;Tecido, Vestuário e Calçados;Calçados
+BVMF3;BMFBovespa;Financeiro e Outros;Serviços Financeiros Diversos;Serviços Financeiros Diversos
+CTIP3;Cetip;Financeiro e Outros;Serviços Financeiros Diversos;Serviços Financeiros Diversos
+BRML3;BR Malls;Financeiro e Outros;Exploração de Imóveis;Exploração de Imóveis
+BRKM5;Braskem;Materiais Básicos;Químicos;Petroquímicos
+PTBL3;Portobello;Bens Industriais;Construção e Engenharia;Produtos para Construção
+ETER4;Eternit;Bens Industriais;Construção e Engenharia;Produtos para Construção
+BRFS3;BR Foods;Consumo não cíclico;Alimentos Processados;Carnes e Derivados
+BEEF3;Minerva;Consumo não cíclico;Alimentos Processados;Carnes e Derivados
+BBTG11;BTG Pactual;Financeiro e Outros;Serviços Financeiros Diversos;Gestão de Recursos e Investimentos
+CIEL3;Cielo;Financeiro e Outros;Serviços Financeiros Diversos;Serviços Financeiros Diversos
+CCRO3;CCR;Bens Industriais;Transporte;Exploração de Rodovias
+ECOR3;Ecorodovias;Bens Industriais;Transporte;Exploração de Rodovias
+CSAN3;Cosan;Petróleo, Gás e Biocombustíveis;Petróleo, Gás e Biocombustíveis;Exploração, Refino e Distribuição
+CVCB3;CVC;Consumo Cíclico;Viagens e Lazer;Viagens e Turismo
+CSNA3;CSN;Materiais Básicos;Siderurgia e Metalurgia;Siderurgia
+CYRE4;Cyrela;Consumo Cíclico;Construção Civil;Edificações
+ELET6;Eletrobras;Utilidade Pública;Energia Elétrica;Energia Elétrica
+EZTC3;Eztec;Consumo Cíclico;Construção Civil;Edificações
+EQTL3;Equatorial;Utilidade Pública;Energia Elétrica;Energia Elétrica
+FIBR3;Fibria;Materiais Básicos;Madeira e Papel;Papel e Celulose
+PARC3;Par Corretora;Financeiros e Outros;Previdência e Seguros;Corretoras de Seguros
+GFSA3;Gafisa;;Consumo Cíclico;Construção Civil;Edificações
+AGRO3;Brasil Agro;Consumo não cíclico;Agropecuária;Agricultura
+GGBR3;Gerdau;Materiais Básicos;Siderurgia e Metalurgia;Siderurgia
+GOLL3;Gol;Bens Industriais;Transporte;Transporte Aéreo
+GRND4;Grendene;Consumo Cíclico;Tecido, Vestuário e Calçados;Calçados
+GUAR4;Guararapes;Consumo Cíclico;Comércio;Tecido, Vestuário e Calçados
+HYPE3;Hypermarcas;Consumo não cíclico;Diversos;Produtos Diversos
+ITSA4;Itausa;Financeiro e Outros;Intermediários Financeiros;Bancos
+KLBN11;Klabin;Materiais Básicos;Madeira e Papel;Papel e Celulose
+KROT3;Kroton;Consumo Cíclico;Diversos;Serviços Educacionais
+SEER3;Ser Educacional;Consumo Cíclico;Diversos;Serviços Educacionais
+HGTX3;Hering;Consumo Cíclico;Tecido, Vestuário e Calçados;Vestuário
+MGLU3;Magazine Luiza;Consumo Cíclico;Comércio;Eletrodomésticos
+MARI3;Marisa;Consumo Cíclico;Comércio;Tecidos, Vestuário e Calçados
+LREN3;Renner;Consumo Cíclico;Comércio;Tecidos, Vestuário e Calçados
+MRFG3;Marfrig;Consumo não cíclico;Alimentos Processados;Carnes e Derivados
+MILS3;Mills;Bens Industriais;Construção e Engenharia;Serviços Diversos
+EMBR3;Bens Industriais;Material de Transporte;Material Aeronáutico de Defesa
+FRAS4;Fras-Le;Bens Industriais;Material de Transporte;Material Rodoviário
+TUPY4;Tupy;Bens Industriais;Material de Transporte;Material Rodoviário
+MRVE3;MRV;Consumo Cíclico;Construção Civil;Edificações
+MPLU3;Multiplus;Consumo Cíclico;Diversos;Programas de Fidelização
+NATU3;Natura;Consumo não cíclico;Produtos de Uso Pessoal e de Limpeza;Produtos de Uso Pessoal
+RADL3;Raia Drogasil;Saúde;Comércio e Distribuição;Medicamentos e Outros Produtos
+SUZB5;Suzano;Materiais Básicos;Madeira e Papel;Papel e Celulose
+SMTO3;São Martinho;Consumo não cíclico;Alimentos Processados;Açucar e Álcool
+TCSA3;Tecnisa;Consumo Cíclico;Construção Civil;Edificações
+VIVT4;Telefônica;Telecomunicações;Telecomunicações;Telecomunicações
+UGPA4;Ultrapar;Petróleo, Gás e Biocombustíveis;Petróleo, Gás e Biocombustíveis;Exploração, Refino e Distribuição
+VVAR11;Via Varejo;Consumo Cíclico;Comércio;Eletrodomésticos
+BTOW3;B2W;Consumo Cíclico;Comércio;Produtos Diversos
+LAME3;Lojas Americanas;Consumo Cíclico;Comércio;Produtos Diversos
+WEGE3;Weg;Bens Industriais;Máquinas e Equipamentos;Motores, Compressores e Outros
+SMLE3;Smiles;Consumo Cíclico;Diversos;Programas de Fidelização
+USIM5;Usiminas;Materiais Básicos;Siderurgia e Metalurgia;Siderurgia
+FESA4;Ferbasa;Materiais Básicos;Siderurgia e Metalurgia;Siderurgia
+PCAR4;Pão de açucar;Comércio e Distribuição;Alimentos
+BBSE3;BB Seguridade;Financeiros e Outros;Previdência e Seguros;Seguradoras
