@@ -53,7 +53,7 @@ MARI3;Marisa;Consumo Cíclico;Comércio;Tecidos, Vestuário e Calçados
 LREN3;Renner;Consumo Cíclico;Comércio;Tecidos, Vestuário e Calçados
 MRFG3;Marfrig;Consumo não cíclico;Alimentos Processados;Carnes e Derivados
 MILS3;Mills;Bens Industriais;Construção e Engenharia;Serviços Diversos
-EMBR3;Bens Industriais;Material de Transporte;Material Aeronáutico de Defesa
+EMBR3;Embraer;Bens Industriais;Material de Transporte;Material Aeronáutico de Defesa
 FRAS4;Fras-Le;Bens Industriais;Material de Transporte;Material Rodoviário
 TUPY4;Tupy;Bens Industriais;Material de Transporte;Material Rodoviário
 MRVE3;MRV;Consumo Cíclico;Construção Civil;Edificações
@@ -72,5 +72,5 @@ WEGE3;Weg;Bens Industriais;Máquinas e Equipamentos;Motores, Compressores e Outr
 SMLE3;Smiles;Consumo Cíclico;Diversos;Programas de Fidelização
 USIM5;Usiminas;Materiais Básicos;Siderurgia e Metalurgia;Siderurgia
 FESA4;Ferbasa;Materiais Básicos;Siderurgia e Metalurgia;Siderurgia
-PCAR4;Pão de açucar;Comércio e Distribuição;Alimentos
+PCAR4;Pão de açucar;Consumo não cíclico;Comércio e Distribuição;Alimentos
 BBSE3;BB Seguridade;Financeiros e Outros;Previdência e Seguros;Seguradoras
