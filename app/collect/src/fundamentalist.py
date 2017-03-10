@@ -28,6 +28,9 @@ if __name__ == '__main__':
 
     mainStocks = load_companies_info('/home/vinicius/workspace/saopaulo/app/collect/res/empresas.txt')
     lista = fundamentus.get_data()
+
+    ### Incluir carteira
+    ### Incluir nota FEA
     
     for k, v in lista.items():
         if(k in mainStocks):
