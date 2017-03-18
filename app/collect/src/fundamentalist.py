@@ -1,6 +1,7 @@
 from fundamentus import fundamentus
 from elasticsearch import Elasticsearch
 from datetime import datetime
+from math import log
 
 def percentageToFloat(value):
   return float(value.replace('%','').replace(',','.'))
@@ -21,6 +22,14 @@ def load_companies_info(filename):
   return dict
 
 
+def compute_score(att):
+  p_vpa = percentageToFloat(att['P/VP']) 
+  d_y = percentageToFloat(att['DY']) 
+  roe = percentageToFloat(att['ROE']) 
+  return   (- 10 * p_vpa) + (2 * d_y) + roe
+         
+
+
 if __name__ == '__main__':
 
     es = Elasticsearch()
@@ -30,7 +39,6 @@ if __name__ == '__main__':
     lista = fundamentus.get_data()
 
     ### Incluir carteira
-    ### Incluir nota FEA
     
     for k, v in lista.items():
         if(k in mainStocks):
@@ -55,6 +63,7 @@ if __name__ == '__main__':
               'roe' : percentageToFloat(v['ROE']), 
               'div_brut_patr' :  percentageToFloat(v['Div.Brut/Pat.']),
               "indexUpdate": datetime.now(),
+              "p_score" : compute_score(v),
               'cres_5a' : percentageToFloat(v['Cresc.5a'])}\
           )
 
