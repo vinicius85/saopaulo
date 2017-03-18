@@ -1,4 +1,3 @@
-empresa;nome;setor;subsetor;segmento
 PETR4;Petrobras;Petróleo, Gás e Biocombustíveis;Petróleo, Gás e Biocombustíveis;Exploração, Refino e Distribuição
 VALE5;Vale;Materiais Básicos;Mineração;Minerais Metálicos
 BRSR6;Banrisul;Financeiro e Outros;Intermediários Financeiros;Bancos
@@ -23,7 +22,6 @@ PTBL3;Portobello;Bens Industriais;Construção e Engenharia;Produtos para Constr
 ETER4;Eternit;Bens Industriais;Construção e Engenharia;Produtos para Construção
 BRFS3;BR Foods;Consumo não cíclico;Alimentos Processados;Carnes e Derivados
 BEEF3;Minerva;Consumo não cíclico;Alimentos Processados;Carnes e Derivados
-BBTG11;BTG Pactual;Financeiro e Outros;Serviços Financeiros Diversos;Gestão de Recursos e Investimentos
 CIEL3;Cielo;Financeiro e Outros;Serviços Financeiros Diversos;Serviços Financeiros Diversos
 CCRO3;CCR;Bens Industriais;Transporte;Exploração de Rodovias
 ECOR3;Ecorodovias;Bens Industriais;Transporte;Exploração de Rodovias
