@@ -36,7 +36,7 @@ def compute_score(att):
   return   (- 10 * p_vpa) + (2 * d_y) + roe
 
 def rentabilidade(cotacaoEntrada,cotacaoAtual):
-  return (cotacaoAtual-cotacaoEntrada)/100
+  return round(((cotacaoAtual/cotacaoEntrada)-1),2)
          
 
 
@@ -74,10 +74,11 @@ if __name__ == '__main__':
               "indexUpdate": datetime.now(),
               "p_score" : compute_score(v),
               "posicao" :  myStocks.get(k)['posicao'] if myStocks.get(k) is not None else 0,
+              "posicao_total" :  myStocks.get(k)['posicao']*percentageToFloat(v['cotacao']) if myStocks.get(k) is not None else 0.0,
               "preco_compra" :  myStocks.get(k)['preco_compra'] if myStocks.get(k) is not None else 0.0,
               "data_inicio" : datetime.strptime(myStocks.get(k)['data_inicio'],'%d/%m/%Y') if myStocks.get(k) is not None else None,
               "data_aporte" : datetime.strptime(myStocks.get(k)['data_aporte'],'%d/%m/%Y') if myStocks.get(k) is not None else None,
-              "rentabilidade" : rentabilidade(myStocks.get(k)['preco_compra'],percentageToFloat(v['cotacao'])) if myStocks.get(k) else 0,
+              "rent" : rentabilidade(myStocks.get(k)['preco_compra'],percentageToFloat(v['cotacao'])) if myStocks.get(k) else 0.0,
               'cres_5a' : percentageToFloat(v['Cresc.5a'])}\
           )
 
