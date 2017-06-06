@@ -13,3 +13,6 @@
 
 - Suporte e resistencia -> Day trade
 - Noticias
+
+### 
+- Incluir outras aplicacoes: CDB, TD, Portocap

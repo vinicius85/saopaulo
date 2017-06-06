@@ -5,3 +5,8 @@ python collect/collect.py http://www.infomoney.com.br/ultimas-noticias/rss colle
 Coletar valor de fechamento das stocks
 
 Criar métrica: correlação noticia x variacao no preco da ação
+
+## Fundamentalista
+
+- Colocar aportes
+- Suportar outros investimentos: CDB, Tesouro Direto,...

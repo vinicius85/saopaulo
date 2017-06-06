@@ -3,7 +3,7 @@ from elasticsearch import Elasticsearch
 from datetime import datetime
 
 def percentageToFloat(value):
-  return float(value.replace('%','').replace(',','.'))
+  return float(value.replace('%','').replace('.','').replace(',','.'))
 
 def load_companies_info(filename):
   dict = {}
